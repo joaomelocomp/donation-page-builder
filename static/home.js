@@ -5,7 +5,7 @@ let valorAtual = 0;
 let Agregado = 0;
 
 function mudarValor() {
-    valorAtual = 2916.23;
+    valorAtual = 2916;
     valor.innerText = "R$ " + valorAtual.toLocaleString("pt-BR", {
         minimumFractionDigits: 2
     });
@@ -28,3 +28,5 @@ function aumentar() {
 
     mudarBarra();
 }
+
+mudarValor()
