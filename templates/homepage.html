@@ -11,9 +11,15 @@
         <h1>Do Rio para Tallinn</h1>
     </div>
     <div id="container-barra">
+        <button onclick="aumentar()">
+            Atualizar valor
+        </button>
         <div id="barra">
             <div id="fill"></div>
         </div>
+        <div id="hud_baixo">        <p id="valor">R$ 2.780,00</p>
+        <p>R$ 18.000,00</p></div>
+
     </div>
     <div id="whyuhere">
         <p>Por que estou indo?</p>
@@ -28,5 +34,12 @@
             <p>Carreira</p>
         </div>
     </div>
+
+    <div id="fazerparte">
+        <h1>Como fazer parte da minha história</h1>
+    
+    </div>
+    <script src="{{ url_for('static', filename='home.js') }}"></script>
 </body>
+
 </html>

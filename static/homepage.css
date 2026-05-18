@@ -27,6 +27,13 @@ body {
     border-radius: 8px;
 }
 
+#hud_baixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 .tag {
     display: inline-flex;
 
