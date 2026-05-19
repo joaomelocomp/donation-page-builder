@@ -30,3 +30,14 @@ function aumentar() {
 }
 
 mudarValor()
+
+const overlay = document.getElementById("overlay")
+const botaoHud = document.getElementById("btnHud")
+botaoHud.addEventListener("click", () => { 
+    if (overlay.style.display === "none") {
+        overlay.style.display = "flex"
+    }
+    else {
+        overlay.style.display = "none"
+    }
+})

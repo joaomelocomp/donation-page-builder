@@ -28,6 +28,7 @@ html, body {
     height: 70px;
 
     background: linear-gradient(45deg, black, rgb(31, 31, 31));
+    z-index: 1000;
 }
 
 .corpo button {
@@ -99,4 +100,26 @@ html, body {
 .tag p {
     margin: 10px;
     color:antiquewhite
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.tags {
+    display: inline-flex;
+    align-items: center;
+    gap: 1%;
+
+    margin-top: 1%;
+
+    background: #2a2a2a;
+    padding: 6px 10px;
+    border-radius: 8px;
 }
