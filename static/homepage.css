@@ -2,14 +2,56 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
-}
 
+    background-color: #202020;
+}
 
 #hud {
     display: flex;
     flex-direction: column;
 
     margin: 0px;
+}
+
+#top-hud {
+    background: #0D0D0D;
+    padding: 56px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    margin: 7px;
+
+    border-radius: 16px;
+}
+
+.hero-flag {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.1;
+}
+
+.hero-flag div:nth-child(1) { background: #0072CE; flex: 1; }
+.hero-flag div:nth-child(2) { background: #000; flex: 1; }
+.hero-flag div:nth-child(3) { background: #fff; flex: 1; }
+
+.hero-eyebrow {
+    font-size: 12px;
+    color: #0072CE;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+#top-hud h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 8px;
+    position: relative;
 }
 
 .corpo {
@@ -56,23 +98,40 @@ html, body {
     height: 100vh;
 }
 
+#container-barra {
+    background-color: #181818;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    padding: 14px;
+    border-radius: 8px;
+
+    width: auto;
+}
+
+#container-barra p {
+    color: #fff;
+
+    font-weight: lighter;
+    font-size: 14px;
+}
+
 #barra {
     display: flex;
 
-    height: 35px;
-    width: 400px;
+    height: 30px;
+    width: 557px;
 
     background-color: rgb(169, 169, 169, 0.5);
 
     border-radius: 8px;
-    border: 1px solid black;
 }
 
 #fill {
-    height: 35px;
+    height: 30px;
     width: 100px;
 
-    background-color: rgb(63, 63, 63);
+    background-color: #0072CE;
 
     border-radius: 8px;
 }
@@ -82,6 +141,10 @@ html, body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+
+#whyuhere #why {
+    color: #494949;
 }
 
 .tag {
@@ -122,4 +185,113 @@ html, body {
     background: #2a2a2a;
     padding: 6px 10px;
     border-radius: 8px;
+}
+
+#fazerparte {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 14px;
+    margin-bottom: 7px;
+    background-color: #0072CE;
+
+    width: 557px;
+
+    padding: 20px 24px;
+    border-radius: 8px;
+
+    gap: 4px;
+}
+
+#fazerparte h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+#fazerparte button {
+    background: #0072CE;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+
+    width: 100px;
+
+    transition: 0.5s;
+}
+
+#fazerparte button:hover {
+    background: #202020;
+    transition: 0.5s;
+}
+
+#carta {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #181818;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    width: 557px;
+    height: 17px;
+
+    padding: 20px 24px;
+    border-radius: 8px;
+}
+
+#carta div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 14px;
+}
+
+#carta h1 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+#carta button {
+    background: #202020;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+
+    width: 100px;
+
+    transition: 0.5s;
+}
+
+#carta button:hover {
+    background: #0072CE;
+    transition: 0.5s;
+}
+
+#carta svg {
+    width: 24px;
+    height: 24px;
+    stroke: #fff;
 }
