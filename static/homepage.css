@@ -1,9 +1,58 @@
-body {
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+
+#hud {
     display: flex;
     flex-direction: column;
 
+    margin: 0px;
+}
+
+.corpo {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+    height: 70px;
+
+    background: linear-gradient(45deg, black, rgb(31, 31, 31));
+}
+
+.corpo button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: auto;
+
+    transition: 0.5s;
+}
+
+.corpo button:hover {
+
+    transition: 0.5s;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
 }
 
 #barra {
